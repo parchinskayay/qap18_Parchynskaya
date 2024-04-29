@@ -8,15 +8,15 @@ b = 2.99
 a_int = int(a)
 b_int = int(b)
 
-print(a, " int: ", a_int, "\n", b," int: ", b_int, sep="")
+print(a, " int: ", a_int, "\n", b, " int: ", b_int, sep="")
 
 # 2 Заменить символ “#” на символ “/” в строке 'www.my_site.com#about'
 
-str = 'www.my_site.com#about'
+str1 = 'www.my_site.com#about'
 
-str_repl = str.replace("#", "/")
+str1_repl = str1.replace("#", "/")
 
-print(str_repl)
+print(str1_repl)
 
 # 3 Напишите программу, которая добавляет ‘ing’ к слову ‘stroka’
 
@@ -29,18 +29,18 @@ print(result)
 
 # 4 В строке “Ivanou Ivan” поменяйте местами слова => "Ivan Ivanou"
 
-str = "Ivanou Ivan"
+str2 = "Ivanou Ivan"
 
-surname, first_name = str.split(" ")
+surname, first_name = str2.split(" ")
 result = first_name + " " + surname
 
 print(result)
 
 # 5 Напишите программу которая удаляет пробел в начале, в конце строки
 
-str = " Hello "
+str2 = " Hello "
 
-str_del = str.strip()
+str_del = str2.strip()
 
 print(str_del)
 
@@ -48,22 +48,22 @@ print(str_del)
 # бы отражали количество учащихся в
 # десяти разных классах (например, 1а, 1б, 2б, 6а, 7в и т.д.).
 
-school= { "1а" : 28,
-          "1б" : 27,
-          "2б" : 7,
-          "6a" : 26,
-          "7в" : 5,
+school = {"1а": 28,
+          "1б": 27,
+          "2б": 7,
+          "6a": 26,
+          "7в": 5,
           "8а": 14,
           "9б": 21,
           "10б": 17,
-          "11г":13 ,
+          "11г": 13,
           "12в": 15}
 
 print(school)
 
 # 7 Создайте список и извлеките из него списка второй элемент.
 
-cars = list (("Opel", "KIA", "BMW", "Audi"))
+cars = ["Opel", "KIA", "BMW", "Audi"]
 
 print(cars[2])
 
@@ -74,7 +74,7 @@ str2 = "employment"
 
 pos = str2.find(str1)
 
-if pos!= -1:
+if pos != -1:
     print("Yes")
 else:
     print("No")
@@ -86,8 +86,8 @@ else:
 
 x = "My name is Agent Smith"
 
-print(x[1]) #y
-print(x[3:18:3]) #nesgt
+print(x[1])   # y
+print(x[3:18:3])   # nesgt
 
 # 10 Есть массив чисел. Известно, что каждое число в этом массиве имеет пару,
 # кроме одного: [1, 5, 2, 9, 2, 9, 1] => 5
@@ -96,5 +96,5 @@ print(x[3:18:3]) #nesgt
 a = [1, 5, 2, 9, 2, 9, 1]
 
 for e in a:
-    if(a.count(e) == 1):
+    if a.count(e) == 1:
         print(e)
