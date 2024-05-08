@@ -24,13 +24,16 @@ print(count)
 # из 10 введенных целых значений.
 
 A = [1, 2, -3, 4, 5, 6, -7, 8, 9, 10]
-mul_pos = 1
+mul_pos = None
 summ_neg = 0
 count_neg = 0
 
 for x in A:
     if x > 0:
-        mul_pos *= x
+        if mul_pos is None:
+            mul_pos = x
+        else:
+            mul_pos *= x
     elif x < 0:
         summ_neg += x
         count_neg += 1
