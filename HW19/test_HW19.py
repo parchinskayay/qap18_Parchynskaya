@@ -69,4 +69,4 @@ class TestLocators:
 
     def test_news(self, driver):
         news = driver.find_element(By.CSS_SELECTOR, '[class="sc-66cb3400-0 kSKEBf"] [class="sc-1097f7fe-0 jbvZzi"]')
-        assert news
+        assert news.is_displayed()
