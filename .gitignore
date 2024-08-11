@@ -1,2 +1,7 @@
 .idea
 .venv
+.DS_Store
+HW18/__pycache__/
+HW19/.DS_Store
+HW19/__pycache__/
+
